@@ -1,0 +1,97 @@
+name: SrujanTestProject
+description: ''
+version: 0.0.1
+author: srujan.mara@cobalths.com
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: srujantestproject
+  parentArtefactID: srujanmaracobalthscomteam
+  buildSystem: wheel
+  author: null
+  createdAt: '2024-02-12 19:12:43'
+pipelines:
+  pipelines/SrujantestPipeline:
+    name: SrujantestPipeline
+    description: ''
+    author: srujan.mara@cobalths.com
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-02-12 19:12:43'
+    datasets:
+      inputs:
+      - datasets/SrujantestDataset
+      outputs:
+      - datasets/TargetDataTest
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/SrujantestDataset:
+    name: SrujantestDataset
+    description: ''
+    author: srujan.mara@cobalths.com
+    createdAt: '2024-02-12 19:20:47'
+    mode: batch
+    physicalDatasets:
+      ProphecyTest:
+        fabricId: 9564
+        datasetType: File
+        description: ''
+        author: srujan.mara@cobalths.com
+        createdAt: '2024-02-12 19:20:47'
+  datasets/TargetDataTest:
+    name: TargetDataTest
+    description: ''
+    author: srujan.mara@cobalths.com
+    createdAt: '2024-02-12 19:29:16'
+    mode: batch
+    physicalDatasets:
+      ProphecyTest:
+        fabricId: 9564
+        datasetType: File
+        description: ''
+        author: srujan.mara@cobalths.com
+        createdAt: '2024-02-12 19:29:16'
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-02-12 19:12:43'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies:
+  '12654':
+    projectUID: 12654
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
+    version: 0.2.3
+    isDefault: true
+    author: null
+    createdAt: '2024-02-12 19:12:14'
+  '12655':
+    projectUID: 12655
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12655.git&subPath=
+    version: 0.0.2
+    isDefault: true
+    author: null
+    createdAt: '2024-02-12 19:12:14'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
